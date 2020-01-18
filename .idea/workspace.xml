@@ -38,7 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gui">
+  <component name="RunManager" selected="Python.list">
     <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HX2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,8 +83,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.gui" />
         <item itemvalue="Python.list" />
+        <item itemvalue="Python.gui" />
       </list>
     </recent_temporary>
   </component>
