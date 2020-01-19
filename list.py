@@ -1,4 +1,15 @@
 import datetime
+from PIL import Image
+import os
+
+img = Image.open("logo.PNG")
+img.show()
+
+def check_input(input):
+    if input != str(input):
+        print('please enter a letter')
+        u_in = input()
+
 
 
 f= open("list_doc","r+")
@@ -15,6 +26,8 @@ def list_disp() :
 
 list_disp()
 u_in = input('')
+check_input(u_in)
+
 while u_in != 'end' :
 
     if u_in == 'a' :
@@ -23,6 +36,7 @@ while u_in != 'end' :
         list.insert(0, str(item))
         list_disp()
         u_in = input('')
+        check_input(u_in)
 
 
     if u_in == 'x':
@@ -38,6 +52,7 @@ while u_in != 'end' :
         list_disp()
         print('Congratulations! You have completed ' + str(count) + ' total tasks!')
         u_in = input('')
+        check_input(u_in)
 
 
     print('...')

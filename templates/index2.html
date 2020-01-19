@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ListIt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+
+
+  <body>
+    <script src="script.js"></script>
+    <header>
+      <div class='icon-bar'>
+        <a href='./index.html'>Home</a>
+        <a href='./profile.html'>My Profile</a>
+        <a href="#settings">Settings</a
+      </div>
+    </header>
+
+
+    <div class='Add'>
+      <a href='./new.html'>
+      <button class='button' type='button'>
+        +
+      </button>
+      </a>
+    </div>
+
+
+    <main>
+      <div class='card'>
+        <div class='card-text'>
+              {% for item in list %}
+                <option value="{{ item }}">{{ item }}</option>
+              {% endfor %}
+          </article>
+        </div>
+      </div>
+    </main>
+    <br>
+    <br>
+
+    <footer>
+      <div class="banner" style="padding:35px; text-align:center;height=48">
+		<br/>
+    <div class="banner-content">
+        <div>
+        <a href='./about.html'> <button class="button1">About Us</button></a>
+        <a href='./help.html'>
+        <button class="button1">Help</button></a>
+      <br/>
+      <br/>
+    </div>
+    </footer>
+  </body>
+</html>
